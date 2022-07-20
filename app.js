@@ -5,8 +5,10 @@ fetch("https://apis.scrimba.com/jsonplaceholder/posts")
     let html = "";
     postArr.map((post) => {
       html += `
+            <div class="list-item">
           <h2>${post.title}</h2>
           <p>${post.body}</p>
+          </div>
           `;
       console.log(html);
     });
