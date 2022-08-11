@@ -1,38 +1,21 @@
-const Profile = () => {
+// must create data for components in div
+const RedeemPoints = () => {
   return (
     <div className="container">
-      <div className="top">
-        <h1>Profile</h1>
-        <img src="http://placehold.it/" />
-      </div>
-
-      <div className="profile-info">
-        <img src="http://placehold.it/" />
-        <p>Name</p>
+      <h1>Redeem Points</h1>
+      <span>
         <a>
-          <img src="http://placehold.it" />
+          <img src="" />
         </a>
-        <a>
-          <img src="http://placehold.it" />
-        </a>
-      </div>
-
-      <div className="awards">
-        <h3>Awards</h3>
-        <img src="http://placehold.it/" />
-        <img src="http://placehold.it/" />
-        <img src="http://placehold.it/" />
-        <img src="http://placehold.it/" />
-      </div>
-
-      <div className="friends-leaderboard">
-        <h3>Friends Leaderboard</h3>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-      </div>
+      </span>
+      <div></div>
+      <hr />
+      <h3>Select a School</h3>
+      <div></div>
+      <div></div>
+      <div></div>
+      <br />
+      <button>Review Details</button>
     </div>
   );
 };
