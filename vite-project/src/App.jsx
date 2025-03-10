@@ -1,34 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
+    <>
+      <fieldset>
+        <legend>Contact Details</legend>
+
+        <label htmlFor="name">Name:</label>
+        <input type="text" id="name" name="name" />
+
+        <label htmlFor="phone_number">Phone Number:</label>
+        <input type="tel" id="phone_number" name="phone_number" />
+
+        <label htmlFor="email">Email:</label>
+        <input type="email" id="email" name="email" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Delivery Details</legend>
+
+        <label htmlFor="street_address">Street Address:</label>
+        <input type="text" id="street_address" name="street_address" />
+
+        <label htmlFor="city">City:</label>
+        <input type="text" id="city" name="city" />
+
+        <label htmlFor="zip_code">Zip Code:</label>
+        <input type="text" id="zip_code" name="zip_code" />
+      </fieldset>
+    </>
+  );
 }
 
-export default App
+export default App;
